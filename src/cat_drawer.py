@@ -47,7 +47,7 @@ def draw_eyes(t: turtle.Turtle):
 def draw_whiskers(t: turtle.Turtle):
     t.color("black")
     
-    # Right Whiskers
+    # Left Whiskers
     move_without_drawing(t, 10, 0)
     t.setheading(160)
     t.forward(40)
@@ -60,7 +60,7 @@ def draw_whiskers(t: turtle.Turtle):
     t.setheading(200)
     t.forward(40)
 
-    # Left Whiskers
+    # Right Whiskers
     move_without_drawing(t, -10, 0)
     t.setheading(20)
     t.forward(40)
