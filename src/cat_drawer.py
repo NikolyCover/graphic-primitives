@@ -92,3 +92,17 @@ def draw_cat(t: turtle.Turtle):
     draw_nose(t)
     
     t.hideturtle()
+
+def main():
+    screen = turtle.Screen()
+    screen.title("Lupita")
+    screen.bgcolor("#ADD8E6")
+
+    cat_turtle = turtle.Turtle()
+
+    draw_cat(cat_turtle)
+
+    screen.mainloop()
+
+if __name__ == "__main__":
+    main()
