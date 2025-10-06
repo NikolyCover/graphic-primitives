@@ -1,21 +1,17 @@
 import turtle
+from cat_drawer import draw_cat
 
-tela = turtle.Screen()
-tela.title("Lupitinha")
-tela.bgcolor("#ADD8E6")
+def main():
+    # 1. Desenhar gato
+    screen = turtle.Screen()
+    screen.title("Lupita")
+    screen.bgcolor("#ADD8E6")
 
-cat = turtle.Turtle()
-cat.speed(5) 
-cat.pensize(3)
+    cat_turtle = turtle.Turtle()
 
-def move(x, y):
-    cat.penup()   
-    cat.goto(x, y)  
-    cat.pendown()
+    draw_cat(cat_turtle)
 
-move(0, -100)
-cat.color("black", "#FFDAB9")
+    screen.mainloop()
 
-cat.begin_fill() 
-cat.circle(100) 
-cat.end_fill()  
+if __name__ == "__main__":
+    main()
